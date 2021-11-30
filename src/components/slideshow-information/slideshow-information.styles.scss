@@ -8,6 +8,8 @@
   }
   @media (max-width: 768px) {
     margin-top: 19rem;
+
+    position: relative;
   }
 }
 .date {
@@ -19,8 +21,10 @@
     transform: translateX(-12rem);
   }
   @media (max-width: 768px) {
-    font-size: 10rem;
-    transform: translateX(80%);
+    font-size: 20vw;
+    position: absolute;
+    right: -30%;
+    top: -15%;
   }
 }
 .trivia {

@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
-import logo from "./logo.svg";
+
 import "./App.scss";
 import HomePage from "./pages/homepage/homepage.component";
 import SlideShow from "./pages/slideshow/slideshow.component";
