@@ -9,6 +9,9 @@
   width: 100%;
   max-width: inherit;
   border-bottom: 1px solid $color-grey;
+  @media (max-width: 768px) {
+    padding: 2rem 0 2rem 0;
+  }
 }
 .gallery-logo {
   cursor: pointer;

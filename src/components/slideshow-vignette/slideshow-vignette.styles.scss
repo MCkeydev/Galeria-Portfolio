@@ -7,11 +7,19 @@
     margin-top: 4rem;
     width: 68.8rem;
   }
+  @media (max-width: 768px) {
+    width: auto;
+  }
 }
 .vignette-hero {
   max-width: 475px;
   height: 560px;
   position: relative;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    margin: 0 2rem;
+  }
 }
 .description-card {
   height: 100%;
@@ -24,15 +32,31 @@
   @media (max-width: 1439px) {
     left: 25rem;
   }
+  @media (max-width: 768px) {
+    left: 0;
+    bottom: -13%;
+    padding: 2rem 0 2rem 0;
+  }
 }
 .vignette-description {
   width: 33rem;
   padding-left: 6.5rem;
   word-wrap: break-word;
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+
+    width: 25rem;
+    padding-left: 4.5rem;
+  }
 }
 .title {
   color: black;
   margin-bottom: 2.4rem;
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    line-height: 29px;
+  }
 }
 .artist-hero {
   width: 128px;
@@ -42,5 +66,11 @@
   left: 500px;
   @media (max-width: 1439px) {
     bottom: 23%;
+  }
+  @media (max-width: 768px) {
+    width: 68px;
+    height: 68px;
+    left: 10%;
+    bottom: -35%;
   }
 }

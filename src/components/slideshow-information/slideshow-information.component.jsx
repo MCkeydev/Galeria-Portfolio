@@ -12,9 +12,9 @@ const Information = ({ description, year, source }) => {
       exit={{ x: -300, opacity: 0 }}
     >
       <span className="date">{year}</span>
-      <article>
-        <p className="trivia">{description}</p>
-      </article>
+
+      <p className="trivia">{description}</p>
+
       <a className="source-link" href={source} target="_blank">
         GO TO SOURCE
       </a>

@@ -2,8 +2,12 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import OpenButton from "../buttons/open-lightbox/open-lightbox.component";
 import "./slideshow-vignette.styles.scss";
-
+import { useMediaQuery } from "react-responsive";
 const Vignette = ({ artist, images, name, description, handler }) => {
+  const mobileTrue = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+  console.log(mobileTrue);
   return (
     <motion.div
       className="vignette-container"
@@ -13,7 +17,7 @@ const Vignette = ({ artist, images, name, description, handler }) => {
     >
       <motion.img
         className="vignette-hero"
-        src={`/${images?.hero?.large}`}
+        src={mobileTrue ? `/${images?.hero?.small}` : `/${images?.hero?.large}`}
         alt="starry night"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

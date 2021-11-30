@@ -6,13 +6,21 @@
     margin-right: 0;
     margin-top: 14rem;
   }
+  @media (max-width: 768px) {
+    margin-top: 19rem;
+  }
 }
 .date {
   color: $color-lightgrey;
   font-size: 20rem;
+
   @media (max-width: 1439px) {
     display: inline-block;
-    transform: translate(-12rem);
+    transform: translateX(-12rem);
+  }
+  @media (max-width: 768px) {
+    font-size: 10rem;
+    transform: translateX(80%);
   }
 }
 .trivia {
@@ -21,6 +29,12 @@
   transform: translateY(-4rem);
   @media (max-width: 1439px) {
     max-width: 45rem;
+  }
+  @media (max-width: 768px) {
+    margin: 0 4rem 0 4rem;
+    transform: none;
+    width: initial;
+    transform: translateY(-8%);
   }
 }
 .source-link {
@@ -31,5 +45,8 @@
   &:hover {
     text-decoration: underline;
     color: black;
+  }
+  @media (max-width: 768px) {
+    margin: 0 4rem;
   }
 }

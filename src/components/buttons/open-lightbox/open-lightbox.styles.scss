@@ -8,7 +8,7 @@
   line-height: normal;
   position: absolute;
   left: 1.6rem;
-  bottom: 1.6rem;
+  top: 90%;
 
   mix-blend-mode: normal;
   letter-spacing: 2.14px;
@@ -17,6 +17,11 @@
 
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.25);
+  }
+  @media (max-width: 768px) {
+    left: 3.6rem;
+    bottom: normal;
+    top: 1.6rem;
   }
 }
 .view-image {
