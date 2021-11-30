@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+.ControlBar {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: inherit;
+  background-color: white;
+}
+.progress-bar {
+  position: absolute;
+  background-color: black;
+  border: solid 1.5px black;
+}
+.control-container {
+  height: 96px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-top: solid 3px $color-grey;
+}
+.control-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 4.1rem;
+}
+.control-info {
+  display: flex;
+  flex-flow: column;
+}
+.info-name {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  color: black;
+  margin-bottom: 0.8rem;
+}
+.info-artist {
+  font-size: 1.3rem;
+
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 9rem;
+}
+.logo {
+  cursor: pointer;
+  transition: opacity 0.1s ease-in-out;
+  &:hover {
+    opacity: 0.6;
+  }
+}

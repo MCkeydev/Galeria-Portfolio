@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.home-page {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.home-page::-webkit-scrollbar {
+  display: none;
+}

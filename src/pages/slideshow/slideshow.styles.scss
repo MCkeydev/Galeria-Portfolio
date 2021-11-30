@@ -1,0 +1,12 @@
+.slideshow {
+  max-width: inherit;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 9.8rem;
+
+  @media (max-width: 1439px) {
+    align-items: normal;
+    overflow-y: scroll;
+  }
+}

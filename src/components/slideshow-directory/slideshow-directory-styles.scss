@@ -1,0 +1,15 @@
+.slideshow-container {
+  max-width: inherit;
+  width: 100%;
+  position: relative;
+  max-width: inherit;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 1439px) {
+    flex-flow: column;
+
+    align-items: center;
+  }
+}

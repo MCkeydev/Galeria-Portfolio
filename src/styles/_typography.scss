@@ -1,0 +1,35 @@
+@import "./variables";
+
+h1 {
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+}
+h2 {
+  font-weight: bold;
+
+  font-size: 2.4rem;
+
+  line-height: 2.9rem;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.display {
+  font-weight: bold;
+  font-size: 20rem;
+  line-height: 15rem;
+}
+.subhead1 {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
+.subhead2 {
+  color: $color-white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  z-index: 1;
+}

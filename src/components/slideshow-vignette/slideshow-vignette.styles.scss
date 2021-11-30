@@ -1,0 +1,46 @@
+.vignette-container {
+  display: flex;
+  position: relative;
+  width: 85.5rem;
+
+  @media (max-width: 1439px) {
+    margin-top: 4rem;
+    width: 68.8rem;
+  }
+}
+.vignette-hero {
+  max-width: 475px;
+  height: 560px;
+  position: relative;
+}
+.description-card {
+  height: 100%;
+  background-color: white;
+  height: min-content;
+  box-sizing: border-box;
+  padding-bottom: 6.7rem;
+  position: absolute;
+  left: 39rem;
+  @media (max-width: 1439px) {
+    left: 25rem;
+  }
+}
+.vignette-description {
+  width: 33rem;
+  padding-left: 6.5rem;
+  word-wrap: break-word;
+}
+.title {
+  color: black;
+  margin-bottom: 2.4rem;
+}
+.artist-hero {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  bottom: -10%;
+  left: 500px;
+  @media (max-width: 1439px) {
+    bottom: 23%;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+.lightbox-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: black;
+  opacity: 0.85;
+
+  z-index: 80;
+}
+.lightbox {
+  display: flex;
+  flex-flow: column;
+  margin: 0 2rem;
+  z-index: 109;
+}
+.lightbox-image {
+  width: 100%;
+  height: auto;
+  z-index: 110;
+}
+.button {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  align-self: flex-end;
+  margin-bottom: 4.1rem;
+
+  transition: opacity 0.2s ease-in-out;
+  z-index: 300;
+
+  &:hover {
+    opacity: 0.25;
+  }
+}

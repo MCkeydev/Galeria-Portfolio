@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.galeria-thumbnail {
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  &:hover {
+    cursor: pointer;
+    .thumbnail-image {
+      opacity: 0.5;
+    }
+  }
+}
+.thumbnail-image {
+  display: block;
+  object-fit: scale-down;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+.description {
+  color: $color-white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0%,
+    rgba(0, 0, 0, 0.841672) 100%
+  );
+  background-size: cover;
+}
+.description-text {
+  padding: 3.2rem;
+}
+.thumbnail-sub-title {
+  font-weight: 400;
+  opacity: 0.75;
+}

@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+.information-container {
+  margin-right: 5rem;
+  padding-bottom: 5rem;
+  @media (max-width: 1439px) {
+    margin-right: 0;
+    margin-top: 14rem;
+  }
+}
+.date {
+  color: $color-lightgrey;
+  font-size: 20rem;
+  @media (max-width: 1439px) {
+    display: inline-block;
+    transform: translate(-12rem);
+  }
+}
+.trivia {
+  max-width: 35rem;
+  width: 100%;
+  transform: translateY(-4rem);
+  @media (max-width: 1439px) {
+    max-width: 45rem;
+  }
+}
+.source-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: inherit;
+  transition: color 0.15s ease-in-out;
+  &:hover {
+    text-decoration: underline;
+    color: black;
+  }
+}
